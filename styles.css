@@ -1,0 +1,48 @@
+body {
+    width: 960px;
+    margin: 0 auto;
+    font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 400;
+    background: #4c8fdf;
+    background: linear-gradient(180deg, #4c8fdf 0%, #236cc4 100%);
+}
+
+.coming-soon {
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 48px 24px;
+    background: white;
+    margin: 120px auto 0 auto;
+}
+
+h1 {
+    text-align: center;
+    /* margin-top: 120px; */
+    font-size: 36px;
+    color: #000232;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 24px;
+    color: #000232;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 48px;
+    font-size: 18px;
+    opacity: 0.8;
+    color: #4c8fdf;
+}
+
+footer {
+    text-align: center;
+    /* position: fixed; */
+    /* bottom: 48px; */
+    color: white;
+    letter-spacing: 0.3px;
+    opacity: 0.7;
+    margin-top: 24px;
+}
