@@ -3,6 +3,13 @@ body {
     font-weight: 400;
 }
 
+@media only screen and (max-width: 414px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -13,6 +20,8 @@ body {
     .container {
         max-width: 414px !important;
         overflow-x: hidden;
+        flex: 1 0 auto;
+        min-height: 750px;
     }
 }
 
@@ -200,7 +209,10 @@ h2 {
 
 @media only screen and (max-width: 414px) {
     .footer {
-        height: 110px;
+        height: inherit;
+        flex-shrink: 0;
+        position: inherit;
+        bottom: none;
     }
 }
 
@@ -238,6 +250,7 @@ h2 {
         line-height: 22px;
         resize: none;
         margin-top: 12px;
+        margin-bottom: 24px;
         padding: 0;
         text-align: center;
     }
@@ -254,9 +267,11 @@ h2 {
 @media only screen and (max-width: 414px) {
     .footer-links {
         margin-top: 28px;
-        margin-right: 24px;
+        margin-right: 0;
         font-size: 15px;
         line-height: 25px;
+        text-align: center;
+        float: inherit;
     }
 }
 
