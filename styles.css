@@ -1,8 +1,6 @@
 body {
     font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 400;
-    /* background: #4c8fdf; */
-    /* background: linear-gradient(180deg, #4c8fdf 0%, #236cc4 100%); */
 }
 
 .container {
@@ -11,9 +9,22 @@ body {
     overflow: hidden;
 }
 
+@media only screen and (max-width: 414px) {
+    .container {
+        max-width: 414px !important;
+        overflow-x: hidden;
+    }
+}
+
 .gh-png {
     width: 40px;
     height: 40px;
+}
+
+@media only screen and (max-width: 414px) {
+    .gh-png {
+        margin-top: 0px;
+    }
 }
 
 .content {
@@ -21,13 +32,31 @@ body {
     margin-top: 64px;
 }
 
+@media only screen and (max-width: 414px) {
+    .content {
+        margin-top: 0;
+    }
+}
+
 .left-column {
     float: left;
     width: 53%;
 }
 
+@media only screen and (max-width: 414px) {
+    .left-column {
+        width: 100%;
+    }
+}
+
 .left-col-content {
     margin-top: 128px;
+}
+
+@media only screen and (max-width: 414px) {
+    .left-col-content {
+        margin-top: 24px;
+    }
 }
 
 h2 {
@@ -37,12 +66,25 @@ h2 {
     margin-left: 24px;
 }
 
+@media only screen and (max-width: 414px) {
+    h2 {
+        font-size: 36px;
+        margin-right: 24px;
+    }
+}
+
 .subtext {
     color: #656566;
     font-size: 20px;
     margin-left: 24px;
     margin-top: 36px;
     line-height: 32px;
+}
+
+@media only screen and (max-width: 414px) {
+    .subtext {
+        margin-right: 24px;
+    }
 }
 
 .second-line {
@@ -54,12 +96,42 @@ h2 {
     margin-left: 24px;
 }
 
+@media only screen and (max-width: 414px) {
+    .app-store-links {
+        width: 60%;
+        margin: 32px auto 0 auto;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    li.app-store.ios {
+        display: list-item;
+        text-align: center;
+    }
+
+    li.app-store.android {
+        display: list-item;
+        text-align: center;
+    }
+
+    li.app-store.mac {
+        display: list-item;
+        text-align: center;
+    }
+}
+
 .app-store-links li {
     display: inline-block;
 }
 
 .app-store-links .app-store.mac img {
     margin-top: 24px;
+}
+
+@media only screen and (max-width: 414px) {
+    .app-store.mac img {
+        margin-top: 0 !important;
+    }
 }
 
 .app-store-links .app-store img {
@@ -72,14 +144,29 @@ h2 {
     position: relative;
 }
 
+@media only screen and (max-width: 414px) {
+    .app-store.android {
+        margin-top: 0px !important;
+        top: 0px !important;
+        position: relative;
+    }
+}
+
 .app-store-links img.play-store {
     height: 80px;
 }
 
+/* Right Columns */
 
 .right-column {
     float: left;
     width: 47%;
+}
+
+@media only screen and (max-width: 414px) {
+    .right-column {
+        display: none;
+    }
 }
 
 .right-column img {
@@ -111,9 +198,22 @@ h2 {
     width: 100%;
 }
 
+@media only screen and (max-width: 414px) {
+    .footer {
+        height: 110px;
+    }
+}
+
 .footer-container {
     max-width: 960px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 414px) {
+    .footer-container {
+        max-width: 414px;
+        overflow: hidden;
+    }
 }
 
 .footer a, .footer a:visited, .footer a:hover, .footer a:active {
@@ -131,6 +231,18 @@ h2 {
     margin-top: 45px;
 }
 
+@media only screen and (max-width: 414px) {
+    .copyright {
+        font-size: 16px;
+        overflow: auto;
+        line-height: 22px;
+        resize: none;
+        margin-top: 12px;
+        padding: 0;
+        text-align: center;
+    }
+}
+
 .footer-links {
     list-style: none;
     float: right;
@@ -139,9 +251,18 @@ h2 {
     font-size: 15px;
 }
 
+@media only screen and (max-width: 414px) {
+    .footer-links {
+        margin-top: 28px;
+        margin-right: 24px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
 .footer-link {
     display: inline-block;
-    margin-left: 24px;
+    margin-right: 16px;
 }
 
 .mobile-agreement.disclaimer {
@@ -152,11 +273,10 @@ h2 {
     font-size: 28px;
 }
 
-
-body.legal {
+/* body.legal {
     padding: 48px;
     font-size: 30px;
     line-height: 40px;
     max-width: 1024px;
     margin: 0 auto;;
-}
+} */
