@@ -6,39 +6,41 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 960px;
     margin: 0 auto;
     overflow: hidden;
 }
 
+.gh-png {
+    width: 40px;
+    height: 40px;
+}
+
 .content {
     overflow: hidden;
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%); */
+    margin-top: 64px;
 }
 
 .left-column {
     float: left;
-    width: 50%;
+    width: 53%;
 }
 
 .left-col-content {
-    margin-top: 178px;
+    margin-top: 128px;
 }
 
 h2 {
-    font-size: 45px;
+    font-size: 40px;
     color: #000232;
     margin-bottom: 12px;
-    margin-left: 48px;
+    margin-left: 24px;
 }
 
 .subtext {
     color: #656566;
     font-size: 20px;
-    margin-left: 48px;
-    width: 70%;
+    margin-left: 24px;
     margin-top: 36px;
     line-height: 32px;
 }
@@ -49,25 +51,35 @@ h2 {
 
 .app-store-links {
     list-style: none;
-    margin-left: 48px;
-    margin-top: 36px;
+    margin-left: 24px;
 }
 
 .app-store-links li {
     display: inline-block;
-    /* width: 196px;
-    height: 56px; */
-    margin-right: 24px;
 }
 
-.app-store-links li img {
-    width: 196px;
-    height: 56px;
+.app-store-links .app-store.mac img {
+    margin-top: 24px;
 }
+
+.app-store-links .app-store img {
+    height: 54px;
+}
+
+.app-store-links .app-store.android {
+    margin-top: 12px;
+    top: 12px;
+    position: relative;
+}
+
+.app-store-links img.play-store {
+    height: 80px;
+}
+
 
 .right-column {
     float: left;
-    width: 50%;
+    width: 47%;
 }
 
 .right-column img {
@@ -92,23 +104,15 @@ h2 {
     background: #000232;
     color: white;
     height: 120px;
-    font-size: 22px;
     clear: both;
-
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    resize: vertical; */
-
     letter-spacing: 0.8px;
-
     position: absolute;
     bottom: 0;
     width: 100%;
 }
 
 .footer-container {
-    max-width: 1440px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -120,8 +124,7 @@ h2 {
 .copyright {
     float: left;
     margin-left: 24px;
-    font-size: 17px;
-    resize: vertical;
+    font-size: 15px;
     overflow: auto;
     line-height: 30px;
     resize: none;
@@ -132,8 +135,8 @@ h2 {
     list-style: none;
     float: right;
     margin-right: 24px;
-    margin-top: 45px;
-    font-size: 17px;
+    margin-top: 51px;
+    font-size: 15px;
 }
 
 .footer-link {
