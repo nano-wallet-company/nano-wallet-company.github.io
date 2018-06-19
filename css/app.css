@@ -266,7 +266,7 @@
   display: block;
   width: 10px;
   height: 6px;
-  background: url(/img/icon-arrow-down.svg);
+  background: url(../img/icon-arrow-down.svg);
   background-size: 10px 6px;
 }
 
@@ -303,7 +303,7 @@
 }
 
 .page-content .details .actions-desktop .action-button.open .text .arrow {
-  background: url(/img/icon-arrow-up.svg);
+  background: url(../img/icon-arrow-up.svg);
 }
 
 .page-content .details .actions-desktop .action-button.open .dropdown {
@@ -690,7 +690,7 @@ body {
 }
 
 .page {
-  background: url(/img/background-icon.svg);
+  background: url(../img/background-icon.svg);
   background-size: 1038px 420px;
   background-repeat: no-repeat;
   background-position: bottom right;
