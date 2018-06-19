@@ -1,0 +1,121 @@
+.footer{
+  padding-bottom:50px;
+  padding-top:50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  text-align:center;
+  align-content: center;
+  .copyright{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom:20px;
+    margin-top:20px;
+    line-height: 25px;
+    align-self: center;
+  }
+  .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .links{
+      display: flex;
+      justify-content: center;
+      margin-bottom:20px;
+    }
+    .icons{
+      display: flex;
+      justify-content: center;
+    }
+    a{
+      color: #FFF;
+      text-decoration: none;
+      margin-left:15px;
+      margin-right:15px;
+      &.link{
+        align-self: center;
+        text-decoration: none;
+        display: block;
+        position: relative;
+        line-height: 25px;
+        height: 25px;
+        .link-content-container{
+          align-self: center;
+          color: #FFF;
+          line-height: 25px;
+          height: 25px;
+          font-size: 16px;
+          font-weight: 600;
+          text-align: left;
+          position: relative;
+          display: flex;
+          > span{
+            display: block;
+          }
+        }
+        .underline{
+          display: block;
+          opacity: 0;
+          background-color: rgba(255, 255, 255, 0.25);
+          border-radius: 1px;
+          width: 122px;
+          height: 2px;
+          position: absolute;
+          bottom: -3px;
+          left: 0px;
+          right: 0px;
+          width: 100%;
+          transition: opacity .2s ease-in;
+        }
+        &:hover{
+          .underline{
+            opacity: 1;
+          }
+        }
+      }
+      &.icon{
+        display: flex;
+        flex: none;
+        width: 41px;
+        height: 41px;
+        border-radius: 100%;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        align-self: center;
+        transition: background-color .2s ease-in;
+        &:hover{
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+        svg{
+          width: 25px;
+          height: 25px;
+          align-self: center;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px){
+    flex-direction: row;
+    text-align:left;
+    .copyright{
+      margin-bottom:0px;
+      margin-top:0px;
+    }
+    .details{
+      flex-direction: row;
+      a{
+        margin-left:30px;
+        margin-right:0px;
+      }
+      .links{
+        flex-direction: row;
+        margin-bottom:0px;
+      }
+      .icons{
+        flex-direction: row;
+      }
+    }
+  }
+}
