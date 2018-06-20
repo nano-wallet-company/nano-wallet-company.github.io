@@ -1,1 +1,10 @@
+/.idea
+/node_modules
+/storage/*.key
+/vendor
+/.vscode
+/.vagrant
+npm-debug.log
+yarn-error.log
+.env
 .DS_Store
