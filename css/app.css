@@ -374,7 +374,7 @@
   }
 
   .page-content .details .detail-icons {
-    padding-top: 80px;
+    padding-top: 40px;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
@@ -728,4 +728,3 @@ body {
     max-width: 1214px;
   }
 }
-
